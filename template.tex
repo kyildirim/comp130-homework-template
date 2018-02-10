@@ -1,0 +1,232 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[useregional]{datetime2}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\usepackage{titling}
+
+\usepackage{color}
+
+\setcounter{secnumdepth}{4}
+
+\setlength{\droptitle}{-4em}
+
+%Project Title
+\newcommand{\projectTitle}{Project Title}
+%Homework Number
+\newcommand{\hwNumber}{1}
+
+%Submission date goes here.
+%Format: #Day of Month #Hour:#Minute AM/PM
+\newcommand{\projectDate}{1st of January 11:59 PM}
+
+%Contact to reach.
+\newcommand{\contactName}{Kaan Yıldırım}
+\newcommand{\contactMail}{kyildirim14@ku.edu.tr}
+
+%Define colors as shown below to use in text.
+\definecolor{Red}{RGB}{255, 0, 0}
+\definecolor{Green}{RGB}{0, 255, 0}
+\definecolor{Blue}{RGB}{0, 0, 255}
+
+\title{\projectTitle\vspace{-2em}}
+
+\date{Submission Date: \projectDate}
+
+\begin{document}
+\maketitle
+
+\lstset{language=Java}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\projectTitle}
+\rhead{Homework \#\hwNumber}
+\lhead{COMP 130}
+\lfoot{\nouppercase{\leftmark}}
+\rfoot{Page \thepage}
+\thispagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\section{Introduction}
+
+%Do not change this section.
+\subsection{Submission}
+Submit a \textbf{folder} that is \textbf{only} containing your Java source files (*.java) to the course's Homework folder. 
+\\
+
+Full path: \textbf{F:\textbackslash COURSES\textbackslash UGRADS\textbackslash COMP130\textbackslash Homework\textbackslash}
+\\
+
+\noindent \textbf{Note:} MAVA 130 students, please submit to the folder under the COMP 130 directory.
+\\
+
+\noindent Please use the following naming convention for the submitted folders: \linebreak
+
+\textbf{PSLetter\_CourseCode\_Surname\_Name\_HWNumber\_Semester}
+\\
+
+\noindent Example folder names:
+\begin{itemize}
+\item \textbf{PSA\_COMP130\_Surname\_Name\_HW\hwNumber\_S18}
+\item \textbf{PSB\_MAVA130\_Surname\_Name\_HW3\hwNumber\_S18}
+\end{itemize}
+
+\noindent Additional notes:
+\begin{itemize}
+\item Using the naming convention properly is important, failing to do so may be \textbf{penalized}.
+\item \textbf{Do not} use Turkish characters when naming files or folders.
+\item Submissions with unidentifiable names will be \textbf{disregarded} completely. (ex. "homework1", "project" etc.) 
+\item Please write your name into the Java source file where it is asked for.
+\end{itemize}
+
+%Do not change this section.
+\subsection{Academic Honesty}
+Koç University's \emph{\href{https://vpaa.ku.edu.tr/sites/vpaa.ku.edu.tr/files/Misc_Documents/Statement_on_Academic_Honesty.pdf}{Statement on Academic Honesty}} holds for all the homeworks given in this course. Failing to comply with the statement will be penalized accordingly. If you are unsure whether your action violates the code of conduct, please consult with your instructor.
+
+\subsection{Aim of the Project}
+Explain the aim of the project briefly in a paragraph here.
+
+%Do not change this section.
+\subsection{Given Code}
+This part is \textbf{optional} but advised as it will allow you to understand the given partitions of the code better. \textbf{Do not} change anything in the code if it is indicated to you with a comment. The code given to you has something called \textbf{JavaDoc} comments above all the methods. These comments allow you to view various information about the method when you mouse over the name of the method. Below are the methods given to you in the code with their explanation.
+
+%Explain the methods you have given in this section.
+%Examples are given below.
+\subsubsection{Given Methods}
+
+%This is a list. Lists always begin with this tag. "itemize" describes the list, not begin.
+\begin{itemize}
+
+%This is a list item. There is no need to indicate the end for an item as it ends at the next item tag.
+\item
+
+%This is a code block. "lstlisting" describes a code block.
+\begin{lstlisting}
+void methodWithNoArguments()
+\end{lstlisting}
+This is an example method with no arguments.
+\item
+\begin{lstlisting}
+int methodWithIntegerValue()
+\end{lstlisting}
+
+%This is an example usage of inline code block.
+This is an example method that returns an \lstinline{int}.
+\item
+\begin{lstlisting}
+void methodWithArguments(int arg1, int arg2)
+\end{lstlisting}
+This method constructs the roads and the crossing and adds them to the screen. See below for how the roads are created individually.
+
+\end{itemize}
+
+%Do not change this section.
+\subsubsection{Given Constants}
+Constants are given at the bottom of the project. All constants provide \textbf{JavaDoc} comments above them. Please read these to understand what constant is used for what. \textbf{Do not} use another variable or a static value for something if there is a constant variable defined for that purpose.
+
+%Do not change this section.
+\subsection{Further Questions}
+For further questions \textbf{about the project} you may contact \textbf{\contactName} at \href{mailto:\contactMail}{\mbox{[\contactMail]}}. Note that it may take up to 24 hours before you receive a response so please ask your questions \textbf{before} it is too late. No questions will be answered when there is \textbf{less than two days} left for the submission.
+
+%This allows you to start a new page regardless of where the previous page ends. Please try to separate sections properly, however refrain from leaving extensive amounts of blank space as this may cause the students to think that the project file ends there.
+\newpage
+
+\section{Project Tasks}
+\label{tasks}
+Any general information or statement about the project is described here in a brief paragraph. Do not include task specific comments or statements.
+
+%Number of task groups and tasks are dependent on the project. Feel free to change accordingly.
+\subsection{Task Group 1}
+A general group of sub tasks that are centered around the same concepts or applications.
+
+\subsubsection{Task 1 of Task Group 1}
+%This is a label that allows you to refer to this section. See next section on how to refer to it.
+\label{taskDescription}
+A task is described as detailed as possible for the students to complete. Make sure that the description does not lack any details that may allow the students to solve it in an undesired way. However refrain from describing tasks in a way that may give hints to students.
+%This block shows how you can give hints. Please use these sparingly as giving too many hints will make the project easier than intended.
+\\
+
+\noindent \textbf{Hint:} This is a hint.
+%End of hint block.
+
+\subsubsection{Task 2 of Task Group 1}
+%This is a referral that allows you to refer to a previously declared label.
+See \ref{taskDescription} for the explanation.
+
+\subsubsection{Task 3 of Task Group 1}
+
+%This is a figure. image.png is the path of the image file that will be used.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{image.png}
+\caption{Example image with a caption. Note that all image captions are titled with the word "Figure" followed by a number. You can use labels to refer to figures as well.}\label{fig:image}
+\end{figure}
+
+This is a referral to Figure \ref{fig:image}. 
+
+\subsection{Task Group 2}
+Second Task Group general description. You may want to express your project descriptions using different styles.
+
+\subsubsection{Task 1 of Task Group 2}
+First task. These styles include \textbf{bold}.
+
+\subsubsection{Task 2 of Task Group 2}
+Second task. Or \emph{italic}.
+
+\subsubsection{Task 3 of Task Group 2}
+Third task. Or \underline{underlined}.
+
+\subsection{Task Group 3}
+Third Task Group. Another way of better expressing your task is the inclusion of colors.
+
+\subsubsection{Task 1 of Task Group 3}
+First task. \textcolor{Red}{This text is colored red.}
+
+\subsubsection{Task 2 of Task Group 3}
+Second task. The word \textbf{\textcolor{Blue}{blue}} is both colored and \textbf{bold} in this example.
+
+\subsubsection{Task 3 of Task Group 3}
+Third task. \textcolor{Red}{P}\textcolor{Green}{l}\textcolor{Blue}{e}\textcolor{Red}{a}\textcolor{Green}{s}\textcolor{Blue}{e} use coloring \textbf{sparingly} as it is may become hard to read.
+
+%Do not change this section.
+\subsection{End of Project}
+Your project ends here. You may continue to tinker with the code to implement any desired features and discuss them with your section leader. Below in the \textbf{Section \ref{further}} are further tasks for you to implement if you are willing to continue practicing the topics. However, \textbf{do not} include any additional features that you implement after this point in to your submission.  
+\\
+
+\noindent \textbf{Final Warning: Do not include anything beyond this point to your submission. Points may be deducted from your grade as Section \ref{further} alters the normal behavior of the simulation.} 
+
+%Do not change this section.
+\section{Further Tasks}
+\label{further}
+Tasks described in this section are \textbf{not} included to your project, but are provided for studying the topics further. \textbf{Do not} submit your project with any of these tasks completed. You will only be graded for the tasks in \textbf{Section \ref{tasks}}. Also note that tasks below are meant to be implemented on their own but may function together as well.
+
+%You may alter the number of further tasks according to your project.
+\subsection{Further Task 1}
+Any further tasks that may be used by the students to study further and improve their skills is described here.
+
+\subsubsection{Task 1 of Further Task 1}
+First task.
+
+\subsubsection{Task 2 of Further Task 1}
+Second task.
+
+\subsubsection{Task 3 of Further Task 1}
+Second task.
+
+\subsubsection{Further Task 2}
+Alternatively further tasks may be short enough to not include task. In this case just explain the task in this section.
+
+\subsubsection{Further Task 3}
+Third further task.
+
+\end{document}
